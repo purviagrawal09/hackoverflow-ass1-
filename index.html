@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Color Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navigation">
+        <ul>
+            <li class="nav"><a href="./aboutme.html">About Me</a></li>
+            <li class="nav"><a href="./gameinfo.html">Game Info</a></li>
+        </ul>
+    </nav>
+
+    <div class="Heading" id="heading">
+        <h1 class="h1">THE GREAT</h1>
+        <br>
+        <h1  class="h1">COLOR GAME</h1>
+        <br>
+        <div id="color-code"></div>
+    </div>
+
+    <div class="options">
+        <button id="new-game" onclick="newGame()" style="cursor: pointer;" ">NEW GAME</button>
+        <!-- <button id="new-game" onclick="setRandom_color()"style="cursor: pointer;">NEW GAME</button> --> 
+        <div id="message"></div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">GAME MODES</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a onclick="easy()">EASY</a>
+                <a onclick="hard()">HARD</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hardcontainer">
+        <span class="grid" id="box1" onclick="select(this.id)"></span>
+        <span class="grid" id="box2" onclick="select(this.id)"></span>
+        <span class="grid" id="box3" onclick="select(this.id)"></span>
+        <span class="grid" id="box4" onclick="select(this.id)"></span>
+        <span class="grid" id="box5" onclick="select(this.id)"></span>
+        <span class="grid" id="box6" onclick="select(this.id)"></span>
+    </div>
+
+    <div class="events">
+        <div id="score">Score: 0</div>
+        
+    </div>
+    <div id="next-round" onclick="setRandomColor()" style="cursor: pointer;">NEXT ROUND</div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

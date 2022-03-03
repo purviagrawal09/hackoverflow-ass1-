@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Section</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            
+            background-color:rgb(225, 246, 255) ;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .wrapper {
+            min-height: 100vh;
+            width: 100%;
+            background-color: #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .testimonial {
+            padding: 0px 50px;
+        }
+/* Styling for content under h1 child of article */
+        article h1 {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-family: 'DM Sans', sans-serif;
+            color: black;
+            font-size: 35px;
+            letter-spacing: 0.9px;
+        }
+        article h1:after {
+            content: "";
+            height: 5px;
+            width: 225px;
+            display: block;
+            margin: auto;
+            background-color: rgb(0, 0, 0);
+            letter-spacing: 1.5px;
+        }
+/* Styling for content under img child of article */
+        article img {
+            height:400px;
+            width: 400px;
+            /* border-radius: 50%; */
+            margin-top: 18px;
+            object-fit: cover;
+
+        }
+/* Styling for content under blockquote */
+        blockquote {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 25px;
+            margin-top: 12px;
+            color: black;
+        }
+/* Styling for content under h5 child of article */
+        article h5 {
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-family: 'DM Sans', sans-serif;
+            color: black;
+        }
+/* Styling for content under p child of article */
+        article p {
+            font-size: 17px;
+        }
+/* Styling the intro section */
+        #details {
+            display: flex;
+            justify-content: center;
+        }
+        .list {
+            color: black;
+            font-size: 30px;
+            width: fit-content;
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            list-style-type: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .innerlist {
+            color: black;
+            font-size: 23px;
+            width: fit-content;
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            list-style-type: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .innerlist1 {
+            font-size: 23px;
+            width: fit-content;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            font-family: 'DM Sans', sans-serif;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+/* Styling the social media section */
+        #handles {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            height: 23px;
+            background-image: url("https://media.istockphoto.com/illustrations/light-blue-abstract-background-of-stone-wall-illustration-id665098636?k=20&m=665098636&s=612x612&w=0&h=er9yIl5lH2v1dhUpl19cGxsuuZwxx4aF5HSCU1YxTD8=");
+        }
+        .github {
+            width: 50px;
+            height: 44px;
+            background-color: white;
+            padding: 9px;
+            border-radius: 50px;
+        
+        }
+        .linkedin {
+            width: 45px;
+            height: 44px;
+            background-color: white;
+            padding: 9px;
+            border-radius: 40px;
+        }
+        .facebook {
+            width: 45px;
+            height: 44px;
+            background-color: white;
+            padding: 9px;
+            border-radius: 40px;
+            margin: -7px;
+        }
+        .instagram {
+            width: 45px;
+            height: 44px;
+            background-color: white;
+            padding: 9px;
+            border-radius: 40px;
+        }
+/* Styling the partition line */
+        hr {
+            border-top: 1px dotted rgb(0, 0, 0);
+
+        }
+/* connect with me button */
+        #contactme {
+            background-color: rgb(0, 0, 0);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 40px;
+            border-radius: 36px;
+        }
+/* Heading section of intro  */
+        #bold1 {
+            font-weight: 800;
+            font-family: 'DM Sans', sans-serif;
+            color: black;
+        }
+/* Heading section of intro  */
+        #bold2 {
+            font-weight: 800;
+            font-family: 'DM Sans', sans-serif;
+        }
+/* navbar styling */
+        #navigation {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        #navigation ul {
+            display: flex;
+        }
+        ul li {
+            color: rgb(0, 0, 0);
+            list-style: none;
+        }
+        li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 0px 15px;
+            text-decoration: none;
+        }
+        #navigation ul li a:hover {
+            border-radius: 20px;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+        }
+        #back {
+            padding: 12px;
+        }
+        body, html{
+          background-color:rgb(2, 2, 36) ;
+          
+      }
+    </style>
+</head>
+
+<body>
+    <nav id="navigation">
+        <ul>
+            <li class="nav" id="back"><a href="./index.html">Go Back</a></li>
+        </ul>
+
+    </nav>
+    <div class="wrapper">
+        <div class="testimonial">
+            <article>
+                <h1>About Me</h1>
+                <img src="./images/WhatsApp Image 2022-03-02 at 2.13.12 PM (1).jpeg" alt="Error Loading Image">
+                <h5>PURVI AGRAWAL </h5>
+                <blockquote>
+                    Heyy! I'm a software developer enthusiast currently in my first year in Metallurgical Engineering at
+                    IIT(BHU) VARANASI.
+                </blockquote>
+                <div id="details">
+                    <ul class="list">
+                        <ul class="list">
+                            <ul class="list">
+                                <li class="class" id="bold1">Current fields of interest</li>
+                                <li class="list">
+                                <li class="innerlist">Competitive Programming</li>
+                                <li class="innerlist">Web Development(Both Client and Server Side)</li>
+                                <!-- <li class="innerlist">CyberSecurity/Hacking</li> -->
+                                </li>
+                            </ul>
+                            <ul class="list">
+                                <li class="list" id="bold2">Skillset</li>
+                                <li class="list">
+                                <li class="innerlist">C,C++, </li>
+                                <li class="innerlist1">HTML,CSS </li>
+
+                                </li>
+                            </ul>
+                        </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="contact">
+        <a href="./connectwithme.html" id="contactme">LET'S CONNECT</a>
+    </div>
+    <hr>
+    <br>
+    <div id="handles">
+        <a href="https://github.com/purviagrawal09" target="_blank"><img
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="error"
+                class="github" id="box3"></a>
+        <a href="https://www.linkedin.com/in/purvi-agrawal-6a8934230" target="_blank"><img
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="error" class="linkedin" id="box1"></a>
+
+        <a href="https://www.instagram.com/_purvi_agrawal_/" target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png"
+                alt="error" class="instagram" id="box4"></a>
+    </div>
+</body>
+
+</html>

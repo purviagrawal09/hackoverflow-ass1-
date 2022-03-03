@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            height: 500px ;
+            background-image: url(https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=);
+            background-repeat: no-repeat;
+            background-size: cover;   
+           }
+        .rules{
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            font-family: 'Pacifico', cursive; 
+            margin: 12px;
+            color: #000000;
+            text-decoration-line: underline;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            font-family: 'Bebas Neue', cursive;
+            padding: 24px;
+            margin-right: 23px;
+            margin-left: 23px;
+            margin-bottom: 81px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            font-family: 'Bebas Neue', cursive;
+            padding: 24px;
+            margin-right: 23px;
+            margin-left: 23px;
+            margin-top: 81px;
+        }
+        #navigation {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+    background-image: url('https://wallpaperaccess.com/full/713148.jpg');
+        }
+        #navigation ul {
+            display: flex;
+        }
+        ul li {
+            color: rgb(255, 255, 255);
+            list-style: none;
+        }
+        li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 0px 15px;
+            text-decoration: none;
+        }
+        #navigation ul li a:hover {
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+        }
+        #back {
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navigation">
+        <ul>
+            <li class="nav" id="back"><a href="./index.html">Go Back</a></li>
+        </ul>
+        
+    </nav>
+    <div class="container">
+        <div>
+            <span class="header">Put your colorful guessing skills to work</span>
+        </div>
+        <ul>
+            <li class="rules">Click on the correct card,matching with the color displayed in RGB format</li>
+            <li class="rules">Every Correct Guess awards you +1 score</li>
+            <li class="rules">Beware! Wrong guess will give you -0.75 score</li>
+            <li class="rules">The game ends once your score reaches below 0</li>
+            <li class="rules">Toggle between Easy and Hard mode to challenge your skills</li>
+            <li class="rules">Share and compete with your friends</li>
+        </ul>
+    </div>
+    <div>
+        <span  class="footer">Hola Amigos!!!Have Fun</span>
+    </div>
+</body>
+</html>
